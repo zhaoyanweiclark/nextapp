@@ -1,25 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Nextjs examples with HTML and API  
 
-## Getting Started
+- Created base [Next.js](https://nextjs.org/)
+- Created by[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-## Preparation
+### Environments preparation
 
 ```bash
 cp .env.example .env
 ```
-
-Fill variables in `.env`
-
+Using an existing database and fill variables in `.env`
+Or define db enviroments in `.env` and then
 ```bash
 docker-compose up
 ```
+
+### Getting Started
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+### Build and start in prod
+
+```bash
+npm run build
+npm run start
+```
+
