@@ -36,3 +36,4 @@ next-env.d.ts
 
 /.env
 /datadir
+/task-define.json

@@ -15,18 +15,18 @@
       "memory": 2048,
       "environment": [
         {
-          "name": "POSTGRES_HOST",
+          "name": "POSTGRES_HOST_WRITE",
           "value": ""
-        },
-        {
+        }, {
+          "name": "POSTGRES_HOST_READ",
+          "value": ""
+        }, {
           "name": "POSTGRES_USER",
           "value": ""
-        },
-        {
+        }, {
           "name": "POSTGRES_PASSWORD",
           "value": ""
-        },
-        {
+        }, {
           "name": "POSTGRES_DB",
           "value": ""
         }
