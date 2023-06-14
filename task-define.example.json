@@ -2,7 +2,7 @@
   "containerDefinitions": [ 
     { 
       "essential": true,
-      "image": "602222598878.dkr.ecr.ap-southeast-2.amazonaws.com/nextapi:latest",
+      "image": "PLACEHOLDER - REQUIRED",
       "name": "nextapi",
       "portMappings": [ 
         { 
@@ -16,26 +16,29 @@
       "environment": [
         {
           "name": "POSTGRES_HOST_WRITE",
-          "value": ""
+          "value": "PLACEHOLDER - REQUIRED"
         }, {
           "name": "POSTGRES_HOST_READ",
-          "value": ""
+          "value": "PLACEHOLDER - REQUIRED"
         }, {
           "name": "POSTGRES_USER",
-          "value": ""
+          "value": "PLACEHOLDER - REQUIRED"
         }, {
           "name": "POSTGRES_PASSWORD",
-          "value": ""
+          "value": "PLACEHOLDER - REQUIRED"
         }, {
           "name": "POSTGRES_DB",
-          "value": ""
+          "value": "PLACEHOLDER - REQUIRED"
+        }, {
+          "name": "APP_VERSION",
+          "value": "PLACEHOLDER - REQUIRED"
         }
       ]
     }
   ],
   "cpu": "1024",
   "memory": "2048",
-  "executionRoleArn": "arn:aws:iam::602222598878:role/ecsTaskExecutionRole",
+  "executionRoleArn": "PLACEHOLDER - REQUIRED",
   "family": "nextapi",
   "networkMode": "awsvpc",
   "runtimePlatform": {

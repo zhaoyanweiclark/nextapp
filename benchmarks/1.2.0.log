@@ -1,0 +1,64 @@
+Benchmarking nextapialb-659086315.ap-southeast-2.elb.amazonaws.com (be patient)
+Completed 400 requests
+Completed 800 requests
+Completed 1200 requests
+Completed 1600 requests
+Completed 2000 requests
+Completed 2400 requests
+Completed 2800 requests
+Completed 3200 requests
+Completed 3600 requests
+Completed 4000 requests
+Finished 4000 requests
+
+
+Server Software:        
+Server Hostname:        nextapialb-659086315.ap-southeast-2.elb.amazonaws.com
+Server Port:            80
+
+Document Path:          /api/users
+Document Length:        225 bytes
+
+Concurrency Level:      400
+Time taken for tests:   12.183 seconds
+Complete requests:      4000
+Failed requests:        0
+Total transferred:      1656000 bytes
+HTML transferred:       900000 bytes
+Requests per second:    328.34 [#/sec] (mean)
+Time per request:       1218.262 [ms] (mean)
+Time per request:       3.046 [ms] (mean, across all concurrent requests)
+Transfer rate:          132.75 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      341  414 252.4    343    1375
+Processing:   347  632 246.8    620    1597
+Waiting:      347  632 246.7    619    1597
+Total:        689 1047 375.3   1021    2971
+
+Percentage of the requests served within a certain time (ms)
+  50%   1021
+  66%   1186
+  75%   1210
+  80%   1272
+  90%   1318
+  95%   1926
+  98%   2189
+  99%   2279
+ 100%   2971 (longest request)
+
+---
+
+PING nextapialb-659086315.ap-southeast-2.elb.amazonaws.com (13.210.235.49): 56 data bytes
+64 bytes from 13.210.235.49: icmp_seq=0 ttl=230 time=342.001 ms
+64 bytes from 13.210.235.49: icmp_seq=1 ttl=230 time=426.999 ms
+64 bytes from 13.210.235.49: icmp_seq=2 ttl=230 time=446.505 ms
+64 bytes from 13.210.235.49: icmp_seq=3 ttl=230 time=366.022 ms
+64 bytes from 13.210.235.49: icmp_seq=4 ttl=230 time=385.346 ms
+64 bytes from 13.210.235.49: icmp_seq=5 ttl=230 time=344.020 ms
+64 bytes from 13.210.235.49: icmp_seq=6 ttl=230 time=341.457 ms
+64 bytes from 13.210.235.49: icmp_seq=7 ttl=230 time=342.124 ms
+64 bytes from 13.210.235.49: icmp_seq=8 ttl=230 time=341.775 ms
+64 bytes from 13.210.235.49: icmp_seq=9 ttl=230 time=343.062 ms
+64 bytes from 13.210.235.49: icmp_seq=10 ttl=230 time=413.118 ms

@@ -28,4 +28,7 @@ COPY --from=builder /srv/package.json package.json
 COPY --from=builder /srv/.next .next
 COPY --from=builder /srv/next.config.js next.config.js
 
-CMD ["npm", "run", "start"]
+# CMD ["npm", "run", "start"]
+
+RUN npm install -g pm2
+CMD ["pm2-runtime", "start", "npm", "--", "run", "start"]

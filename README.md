@@ -92,6 +92,13 @@ aws iam attach-role-policy \
 ```
 
 ### Create task-define and update service
+
+Create `task-define.json` file based on `task-define.example.json` and fill out required values
+
+```bash
+cp task-define.example.json task-define.json
+```
+
 ```bash
 aws ecs register-task-definition \
   --family nextapi \
@@ -105,5 +112,14 @@ aws ecs update-service \
   --task-definition nextapi:${taskRevision} \
   --desired-count 2 \
   --region ap-southeast-2 \
+  --query service.taskDefinition
+```
+
+Force update service
+```bash
+aws ecs update-service \
+  --cluster nextapi \
+  --service nextapiservice \
+  --force-new-deployment \
   --query service.taskDefinition
 ```
