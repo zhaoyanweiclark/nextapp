@@ -9,6 +9,7 @@ RUN npm install
 
 ADD app app
 ADD database database
+ADD postgres postgres
 ADD public public
 ADD .eslintrc.json .eslintrc.json
 ADD next.config.js next.config.js
