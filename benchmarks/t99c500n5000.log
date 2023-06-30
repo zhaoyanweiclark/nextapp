@@ -1,0 +1,35 @@
+Server Software:        
+Server Hostname:        nextapialb-659086315.ap-southeast-2.elb.amazonaws.com
+Server Port:            80
+
+Document Path:          /api/delays?time=99
+Document Length:        1200 bytes
+
+Concurrency Level:      500
+Time taken for tests:   17.784 seconds
+Complete requests:      5000
+Failed requests:        0
+Total transferred:      6945000 bytes
+HTML transferred:       6000000 bytes
+Requests per second:    281.15 [#/sec] (mean)
+Time per request:       1778.380 [ms] (mean)
+Time per request:       3.557 [ms] (mean, across all concurrent requests)
+Transfer rate:          381.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      261  333 104.3    328    2325
+Processing:   362 1060 570.0   1174    4459
+Waiting:      362 1039 543.4   1104    4124
+Total:        690 1392 576.9   1505    4767
+
+Percentage of the requests served within a certain time (ms)
+  50%   1505
+  66%   1769
+  75%   1845
+  80%   1888
+  90%   1975
+  95%   2078
+  98%   2607
+  99%   3112
+ 100%   4767 (longest request)
