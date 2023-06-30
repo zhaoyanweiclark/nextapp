@@ -7,7 +7,14 @@ export async function GET(req: Request) {
   if (delays) {
     await new Promise(r => setTimeout(r, delays))
   }
-  const res = { message: `request delayed ${delays || 0} ms` }
+  const res = {
+    data: Array(20).fill({
+      "firstName": "firstName",
+      "lastName": "lastName",
+      "age": 20,
+    }),
+    message: { message: `Response delayed by ${delays || 0} ms` },
+  }
   return new Response(JSON.stringify(res), {
     status: 200
   });
